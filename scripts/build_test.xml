@@ -25,6 +25,7 @@
 	<property name="JDK_VERSION" value=""/>
 	<property name="TEST_JDK_HOME" value="${TEST_JDK_HOME}" />
 	<property name="JAVAC" value="${TEST_JDK_HOME}/bin/javac" />
+	<property name="skipDependency" value="false" />
 
 	<import file="./getDependencies.xml"/>
 
