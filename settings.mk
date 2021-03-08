@@ -191,7 +191,9 @@ REPORTDIR = $(Q)$(REPORTDIR_NQ)$(Q)
 # TEST_STATUS
 #######################################
 RM_REPORTDIR=
+$(info    KEEP_REPORTDIR1 is $(KEEP_REPORTDIR))
 KEEP_REPORTDIR?=true
+$(info    KEEP_REPORTDIR2 is $(KEEP_REPORTDIR))
 ifeq ($(KEEP_REPORTDIR), false)
 	RM_REPORTDIR=$(RM) -r $(REPORTDIR);
 endif
